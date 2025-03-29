@@ -1,3 +1,115 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.react-calendar {
+  @apply !w-full !border-none;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.react-calendar__tile--active {
+  @apply !bg-school-sky !text-black;
+}
+
+.react-calendar__navigation__label__labelText {
+  @apply !font-semibold
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.rbc-btn-group:first-child {
+  @apply !hidden
+}
+
+.rbc-btn-group:last-child {
+  @apply !text-[13px] 
+}
+
+.rbc-btn-group:last-child button {
+  @apply !border-none !bg-school-purple-light !ml-[2px]
+}
+
+.rbc-toolbar-label {
+  @apply !text-right !px-[20px]
+}
+
+.rbc-toolbar button.rbc-active {
+  @apply !bg-[#dbdafe] !shadow-none
+}
+
+.rbc-time-view {
+  @apply !border-[#eee]
+}
+
+.rbc-time-header {
+  @apply !hidden
+}
+
+.rbc-time-content {
+  @apply !border-none
+}
+
+.rbc-time-gutter.rbc-time-column {
+  @apply !text-[12px]
+}
+
+.rbc-time-gutter.rbc-time-column .rbc-timeslot-group {
+  @apply !px-5
+}
+
+.rbc-timeslot-group {
+  @apply !bg-[#f7fdff]
+}
+
+.rbc-day-slot {
+  @apply !text-[14px]
+}
+
+.rbc-event {
+  @apply !border-none !text-black !p-[10px] !m-[10px] !w-[99%]
+}
+
+.rbc-event:nth-child(1) {
+  @apply !bg-[#e2f8ff]
+}
+
+.rbc-event:nth-child(2) {
+  @apply !bg-[#fefce8]
+}
+
+.rbc-event:nth-child(3) {
+  @apply !bg-[#f2f1ff]
+}
+
+.rbc-event:nth-child(4) {
+  @apply !bg-[#fdf2fb]
+}
+
+.rbc-event:nth-child(5) {
+  @apply !bg-[#e2f8ff]
+}
+
+.rbc-event:nth-child(6) {
+  @apply !bg-[#fefce8]
+}
+
+.rbc-event:nth-child(7) {
+  @apply !bg-[#e2f8ff]
+}
+
+.rbc-event:nth-child(8) {
+  @apply !bg-[#fdf2fb]
+}
+
+.rbc-event-label {
+  @apply !text-gray-400 mb-[5px]
+}
